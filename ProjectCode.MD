@@ -17,13 +17,13 @@ The attached 'run_analysis.R' script will do the follwing
 	D - with meand and standard deiation for each measuremnt.
 
 * Uses descriptive activity names to name the activities in teh data set
-	Reads activity_lables.txt to get activity names
-	walking, 
-	walkingupstairs,
-	walkingdownstairs,
-	sitting,
-	standing,
-	laying
+<br>	Reads activity_lables.txt to get activity names
+<br>	walking, 
+<br>	walkingupstairs,
+<br>	walkingdownstairs,
+<br>	sitting,
+<br>	standing,
+<br>	laying
 
 * Appropriately labels the data set with descriptive variable names.
  	assign approperiate names and its mean,standard deviation which is from number 2, and c
