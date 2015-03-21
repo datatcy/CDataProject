@@ -20,20 +20,20 @@ Type 'q()' to quit R.
 [Previously saved workspace restored]
 
 > #1
-> tbl1 <- read.table("c://users/francispc/documents/train/x_train.txt")
-> tbl2 <- read.table("c://users/francispc/documents/test/x_test.txt")
+> tbl1 <- read.table("/train/x_train.txt")
+> tbl2 <- read.table("/test/x_test.txt")
 > A <- rbind(tbl1,tbl2)
 > 
-> tbl1 <- read.table("c://users/francispc/documents/train/subject_train.txt")
-> tbl2 <- read.table("c://users/francispc/documents/test/subject_test.txt")
+> tbl1 <- read.table("/train/subject_train.txt")
+> tbl2 <- read.table("/test/subject_test.txt")
 >  B <- rbind(tbl1,tbl2)
 > 
->  tbl1 <- read.table("c://users/francispc/documents/train/y_train.txt")
->  tbl2 <- read.table("c://users/francispc/documents/test/y_test.txt")
+>  tbl1 <- read.table("/train/y_train.txt")
+>  tbl2 <- read.table("/test/y_test.txt")
 >  C <- rbind(tbl1,tbl2)
 > 
 > #2
-> D <- read.table("c://users/francispc/documents/features.txt")
+> D <- read.table("/features.txt")
 >  good_features <- grep("-mean\\(\\)|-std\\(\\)",D[,2])
 >  A <-A[,good_features]
 >  names(A) <-D[good_features,2]
@@ -41,7 +41,7 @@ Type 'q()' to quit R.
 >  names(A) <-tolower(names(A))
 > 
 > #3
->  act <- read.table("c://users/francispc/documents/activity_labels.txt")
+>  act <- read.table("/activity_labels.txt")
 >  act[,2]= gsub("_","",tolower(as.character(act[,2])))
 >  C[,1] =act[C[,1],2]
 >  names(C) <- "activity"
